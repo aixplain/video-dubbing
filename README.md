@@ -55,7 +55,7 @@ Here you may change the server port to any open port of your choice. Login to be
 
 You may start a new job or choose a previously started job. Each job has a separate folder that stores the relevant data.
 
-**Subtitling**: The app allows you to `upload a video file` directly. Alternatively, you can also provide a `public Dropbox link` to the video file starting with "**[https://www.dropbox.com](https://www.dropbox.com/)**". The app will automatically download the video from Dropbox. The processing starts by uploading file to S3 in specified bucket and folder, and generating subtitles for the source video using the selected aiXplain pipeline. The subtitle pipeline is triggered and run asynchronously, the status of which reflects in the app. 
+**Subtitling**: The app allows you to `upload a video file` directly. Alternatively, you can also provide a `public Dropbox link` to the video file starting with "**[https://www.dropbox.com](https://www.dropbox.com/)**". The app will automatically download the video from Dropbox. The processing starts by uploading file to S3, and generating subtitles for the source video using the selected aiXplain pipeline. The subtitle pipeline is triggered and run asynchronously, the status of which reflects in the app. 
 
 **Subtitle translation**: Once, subtitles are generated, based on the user choice, the subtitles are then translated to the target language using the `ChatGPT` model from the `aiXplain` platform. As a recent advancement in the domain of Large Language Models, ChatGPT has demonstrated exceptional performance in translation tasks when provided with well-crafted prompts. It also offers the capability to incorporate supplementary contextual information into the prompts, thereby enhancing the quality of the translation.
 
@@ -97,7 +97,7 @@ The subtitling pipeline on the platform supports the following languages. By def
 
 The app performs the following actions:
 
-1. Uploads the video file to the specified S3 bucket and folder.
+1. Uploads the video file to the S3.
 2. Runs the subtitle pipeline on the uploaded video using aiXplain SDK.
 3. Downloads the generated subtitles in the SRT format for each language available in the result.
 4. Saves the downloaded subtitles in the **`subtitles`** directory under a unique `job ID` within the project's data directory.
