@@ -1,0 +1,18 @@
+cookie:
+  expiry_days: 1
+  key: ekam-cookie_key
+  name: ekam-cookie
+credentials:
+  usernames:
+    abdul:
+      email: ahmet@aixplain.com
+      name: Abdul
+      password: $2b$12$Egp/0k3va7H5ZpbbMJQxm.l7hexwHeBtOpbFclv56hwK63d71v01i
+    ahmet:
+      email: ahmet@aixplain.com
+      name: Ahmet Gunduz
+      password: $2b$12$AyXB..xRPSs/mb6hk32/JuvjpIlOI4VVQvTJyFpgb16bamdb.TVh2
+preauthorized:
+  emails:
+  - admin@aixplain.com
+  - ahmet@aixplain.com
